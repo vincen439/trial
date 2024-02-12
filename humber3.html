@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="humberger.css">
+</head>
+<body>
+ <div class="imag">
+  <img src="c:\Users\Obare\Desktop\portfolia\IMG_2023-11-20-13-35-24-447.jpg">
+</div>
+  <div id="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div id="menu">
+    <div id="menu-content">
+      <h2>Want to know more about me</h2>
+      <p>
+      Here are more of my projects. 
+      </p>
+    </div>
+    <div id="close-menu" onclick="toggleMenu()">X</div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>

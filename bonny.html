@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="bonny.css">
+  <h1>We appreciate your information</h1>
+</head>
+<body>
+<form action="#" method="get">
+<fieldset>
+<legend>Basics</legend>
+<p>Enter your name: <input type="text" maxlength="35" size="20" required><br></p>
+<p>Topic of your consern: <input type="text" maxlength="35" size="20" required>
+</p>
+<p>What do you like to say: <input type="text" size="20" required> </p>
+</fieldset>
+<p><label>Which is your favorite thing about us?</label>
+<input type="radio" name="favorite" value="Movie" >Mexican
+<input type="radio" name="favorite" value="Songs">Russian
+<input type="radio" name="favorite" value="Episodes">Japanese
+<input type="radio" checked name="favorite" value="Other" required>Other
+</p>
+</p>
+<p><label>When were you born?</label>
+<input type="radio" name="year" value="2003">2003
+<input type="radio" name="year" value="2004">2004
+<input type="radio" name="year" value="2005">2005
+<input type="radio" checked name="year" value="other" required>other
+</p>
+<p>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+<section>
+<p><label> Three Letter Acronyms:
+<input pattern="[A-Z]{3}" name="threeletter"
+title="Enter an upper case three letter combination."/>
+</label></p>
+<p><label>Name: <input type="text" name="fullname" placeholder="Vincent De Tycoon"></label></p>
+<p><input type="range" name="slider"></p>
+<p><input type="date" oninput="year.value = valueAsDate.getYear();" required>
+<p>HTML5 finalized in the year <output output="year">&nbsp;</output></p>
+<p><label> Favorite Website: <input list="dogs"></label></p>
+<datalist id="dogs">
+<option>Angus</option>
+<option>Tucker</option>
+<option>Cisco</option>
+<option>Sabrina</option>
+</section>
+
+  
+</body>
+</html>

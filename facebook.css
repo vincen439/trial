@@ -1,0 +1,73 @@
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+input[type="number"]{
+    border: 100%;
+    width: 100%;
+    padding: 10px 16px;
+    border-width: 100%;
+    padding: 20px 20px 20px;
+background-color: rgb(64, 34, 122);
+}
+body{
+    font-family: Arial,sans-serif;
+    display: flex;
+    align-content: center;
+    height: 100vh;
+    margin: 9px;
+padding: 20px 15px;
+
+    text-size-adjust: 16;
+    background-color: #f4f4f4;
+}
+
+form{
+    color: rgb(67, 11, 163);
+    text-align: center;
+    border: solid;
+    display: grid;
+    background-color: fff;
+    border-radius: 10px;
+padding: 20px 15px;
+    border-spacing: 5px;
+    padding: 20px;
+    transform: translate(-50,-50);
+    position: absolute;
+    top: 50%;
+    width: 320px;
+box-sizing: border-box;
+box-shadow: 0 2px 4px rgba(0,0,0,0,1);
+margin: 40px;
+top: auto;
+left: 35%;
+right: 35%;
+flex-grow: initial;
+
+}
+lr{
+    text-align: center;
+    color: rgb(34, 21, 149);
+    list-style: none;
+    text-transform: unset;
+}
+input[type="button"]{
+   background-color: brown;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+input[type="password"]{
+    width: 90%;
+    padding: 10px 16px;
+}
+
+a{
+    color: brown;
+}
+h1{
+    text-shadow: red 3px 4px ;
+    align-content: center;
+    align-self: center;
+    
+}

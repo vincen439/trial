@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar{
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    padding: 25px;
+    font-size: 2em;
+    padding-bottom: 25px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+.sidebar li{
+    margin-bottom: 10px;
+
+}
+
+.sidebar a{
+    text-decoration: none;
+    text-transform: capitalize;
+color: #fff;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+h2,h1{
+    color: #333;
+    font-size: large;
+    
+
+}
+section{
+    margin-bottom: 40px;
+}
+.sidebar ul li:hover{
+    background-color: blue;
+    color:red 2px 2px ;
+    text-shadow: red 2px 2px;
+
+}

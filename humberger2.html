@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      display: contents;
+      align-content: center;
+    }
+h2,p{
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+    #hamburger {
+      display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #hamburger div {
+      width: 30px;
+      height: 3px;
+      background-color: #752424;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    #menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(109, 33, 33, 0.8);
+      z-index: 999;
+      text-align: center;
+      color: #fff;
+    }
+
+    #close-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #701313;
+    }
+.skills{
+  display: block;
+  text-align: left;
+}
+  </style>
+  <h2>Welcome to my portfolio</h2>
+</head>
+<body>
+<h2>Want to know more about me?</h2>
+<header>
+  <div id="menu">
+<ol>
+  <li><a href="about">About Me</a></li>
+  <li><a href="service">Service</a></li>
+  <li><a href="">About Me</a></li>
+</ol></div></header>
+<form>
+  <h3>skills</h3>
+  <div class="skills">
+  <p>I am a developer with skills in:</p>
+  <div>1 HTML5 <input type="range" step="90%"></div>
+  <div>2 CSS  <input type="range" step="90%"></div>
+  <div> Javascript <input type="range" step="90%"></div>
+  <div>4 React <input type="range" step="90%"></div>
+  <div>5 Wordpress <input type="range" step="90%" start="90%"></div>
+</div>
+<h3>
+  Education.
+</h3>
+<p>Attended a degree in Information Technology at <br>
+  <input type="image" src=""><b>University Of Eldoret</b>
+</p>
+<h3>Projects</h3>
+<div><a href="www.linkedin.co.ke" type="url" src="www.linkedin.co.ke">Github  account</div>
+<div class="content">
+  <h3>Contacts</h3>
+  <section><input type="image" src="" alt="tycoon"></section>
+<section> <input type="image" src="" alt="tycoon"></section>
+<section><input type="image" src="" alt="tycoon"></section></div>
+  <div id="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div id="men">
+    <div>
+      <h2>Menu Content Goes Here</h2>
+      <p>This is some information you want to display.</p>
+    </div>
+    <div id="close-menu" onclick="toggleMenu()">X</div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.style.display = ( menu.style.display === '') ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>

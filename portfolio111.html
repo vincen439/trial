@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <title>Aside Menu Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="stylesheet" href="portfolio111.css">
+</head>
+<body>
+    <header>
+        <h1>Tycoon The Web Developer</h1>
+    </header>
+
+    <aside>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="openMenu('home')"><i class="fas fa-home home-icon"></i>Home</a></li>
+            <li><a href="javascript:void(0);" onclick="openMenu('about')"><i class="fas fa-info-circle menu-icon"></i>About Me</a>
+                <div class="sub-menu"><ul>
+            <li><a href="javascript:void(0)" onclick="openMenu('menuId2')"><i class="fas fa-home menu-icon"></i>Projects</a></li>
+            <li><a href="javascript:void(0);" onclick="openMenu('Vision')"><i class="fas fa-home menu-icon"></i>Vision</a></li>
+            <li><a href="javascript:void(0);" onclick="openMenu('Mission')"><i class="fas fa-home menu-icon"></i>Mission</a></li>
+            <li><a href="javascript:void(0);" onclick="openMenu('skills')"><i class="fas fa-home menu-icon"></i>skills</a>
+            
+            <ul>
+                <div class="skills">
+                    <li>Web development skills</li>
+                    <li>Cyber sec skills</li>
+                     <li>Mobile App development skills</li>
+                    
+                    
+                </div>
+            </ul>
+            
+            </li>
+            <li><a href="javascript:void(0);" onclick="openMenu('Acknoledgement')"><i class="fas fa-home menu-icon"></i>Acknoledgement</a>
+                <div class="sub-menu-content">
+                    <p>Praise be to God, lord of the whole creation</p>
+                </div></li>
+            </li></ul></div>
+            <li><a href="javascript:void(0);" onclick="openMenu('services')"><i class="fas fa-cogs menu-icon"></i>Services</a>
+                <div class="sub-menu">
+                    <ul>
+                    <li><a href="javascript:void(0);" onclick="openMenu('web design')">Web design</a></li>
+                    <li><a href="javascript:void(0);" onclick="openMenu('cyber security')">Cyber security</a></li>
+                    <li><a href="javascript:void(0);" onclick="openMenu('Mobile app')">Mobile app</a></li>
+                    </li>
+                    </ul>
+                            </div></li>
+            <li><a href="javascript:void(0);" onclick="openMenu('contact')"><i class="fas fa-envelope menu-icon"></i>Contact</a></li>
+        </ul>
+    </aside>
+    <div class="sub-menu-content">
+        
+        <ul>
+            <li><a href="E.commerce.html">E-commerce websites</a></li>
+            <li><a href="calculator.html">Sample calculator</a></li>
+            <li><a href="musicplayer.html">Music player</a></li>
+            <li><a href="facebook.html">Facebook clone</a></li>
+            <li><a href="TrackingApp.html">Track with phone number</a></li>
+        </ul>
+    </div>
+    <main>
+        <div id="home" class="menu-content">
+            <h1><i class="fas fa-home"></i> Welcome to our Home Page</h1>
+            <p>This is the home content.</p>
+        </div>
+
+        <div id="about" class="menu-content">
+            <h1><i class="fas fa-info-circle"></i> About Us</h1>
+            <p>About our company and mission.</p>
+        </div>
+
+        <div id="services" class="menu-content">
+            <h1><i class="fas fa-cogs"></i> Our Services</h1>
+            <p>We offer a variety of services.</p>
+        </div>
+
+        <div id="contact" class ="menu-content">
+            <h1><i class="fas fa-envelope"></i> Contact Us</h1>
+            <p>Get in touch with us.</p>
+        </div>
+    
+    </main>
+
+    <script>
+        function openMenu(menuId) {
+            // Hide all menu content
+            var menuContents = document.querySelectorAll('.menu-content');
+            for (var i = 0; i < menuContents.length; i++) {
+                menuContents[i].style.display = 'none';
+            }
+
+            // Show the selected menu content
+            document.getElementById(menuId).style.display = 'block';
+        }
+
+        function openMenu(menuId2) {
+            // Hide all sub-menu content
+            var submenuContents = document.querySelectorAll('.sub-menu-content');
+            for (var i = 0; i < submenuContents.length; i++) {
+                submenuContents[i].style.display = 'none';
+            }
+
+            // Show the selected menu content
+            document.getElementById(menuId2).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

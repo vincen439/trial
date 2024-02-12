@@ -1,0 +1,66 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background: #0141f8;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+input [type="checkbox"]{
+    
+    visibility: hidden;
+    display:none;
+
+
+}
+.bar{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.bar .middle{
+ height: 6px;  
+ width: 80px;
+ background: #fff;
+ position: absolute;
+ transition: 0.3s ease-in-out;
+
+}
+.bar .bottom{
+    height: 6px;  
+    top: 30px;
+    width: 80px; 
+    background: #fff;
+    position: absolute;
+    transition: 0.3s ease;
+   
+   }
+   .bar .top{
+    height: 6px;  
+    width: 80px; 
+    background: #fff;
+    position: absolute;
+    transition: 0.3s ease;}
+   
+   input [type="checkbox"]:checked~ .bar .top{
+transform: rotate(-45deg);
+width: 70px;
+transform-origin: right;
+top: 35px;
+   }
+   input [type="checkbox"]:checked~ .bar .bottom{
+    transform: rotate(-45deg);
+    width: 70px;
+    transform-origin: right;
+    top: 25px;
+       }
+       input [type="checkbox"]:checked~ .bar .middle{
+        transform: translate(20px);
+        opacity: 0;
+           }
+           h1{
+            color: aqua;
+            text-transform: capitalize;
+           }

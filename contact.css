@@ -1,0 +1,23 @@
+form{
+    color: rgb(67, 11, 163);
+    text-align: center;
+    border: solid;
+   align-items: center;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    font-size: 30px;
+    border-spacing: 5px;
+    padding: 40px ;
+    width: auto;
+box-sizing: border-box;
+box-shadow: 0 2px 4px rgba(0,0,0,0,1);
+position: absolute;
+align-self: center;
+flex-grow: initial;
+color: black;
+}
+.div{
+    text-align: center;
+    padding: 15px;
+    text-size-adjust: auto;
+}

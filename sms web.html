@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Web App</title>
+</head>
+<body>
+    <h1>SMS Web App</h1>
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" placeholder="Enter phone number">
+    <br>
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Enter your message"></textarea>
+    <br>
+    <button onclick="sendSMS()">Send SMS</button>
+
+    <script >
+        // Ensure you include the Twilio JavaScript library in your HTML file
+// <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+
+function sendSMS() {
+    const phoneNumber = document.getElementById('phoneNumber').value;
+    const message = document.getElementById('message').value;
+
+    // Your Twilio API credentials
+    const accountSid = 'your_account_sid';
+    const authToken = 'your_auth_token';
+    const fromNumber = 'your_twilio_phone_number';
+
+    // Twilio API endpoint
+    const apiUrl = `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`;
+
+    // Data to be sent in the request
+    const data = {
+        To: phoneNumber,
+        From: fromNumber,
+        Body: message,
+    };
+
+    // Send SMS using Twilio API
+    $.ajax({
+        url: apiUrl,
+        type: 'POST',
+        headers: {
+            'Authorization': 'Basic ' + btoa(`${accountSid}:${authToken}`),
+        },
+        data: data,
+        success: function(response) {
+            console.log('SMS sent successfully:', response);
+            alert('SMS sent successfully!');
+        },
+        error: function(error) {
+            console.error('Error sending SMS:', error);
+            alert('Error sending SMS. Please try again.');
+        }
+    });
+}
+    </script>
+</body>
+</html>

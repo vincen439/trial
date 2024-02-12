@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Patrick Murimi's Portfolio, which depicts his impressive repertoire of skills at a young age."
+    />
+    <meta
+      name="keywords"
+      content="Patrick Kabuga Murimi, FrontEnd Web Developer, Developer, Student Developer, Web Developer, Web Designer,  Programmer, Computer Science Student, Junior Developer, Google Developer Student Clubs Lead, Microsoft Learn Student Ambassador, Postman Student Leader, Angular, Frontend Engineer"
+    />
+    <meta name="author" content="Patrick Murimi" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrick Murimi's Portfolio Website</title>
+    <!-- Link to FontAwesome Icons online -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/03f6c6393a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon Image -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- jQuery CDN link-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <header>
+      <!-- Menu Tab and Logo at top Using HTML -->
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle" onclick="toggleMenu()"></div>
+      <ul class="menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link" onclick="toggleMenu()">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" onclick="toggleMenu()">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link" onclick="toggleMenu()"
+            >Services</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#work" class="nav-link" onclick="toggleMenu()">Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="#testimonials" class="nav-link" onclick="toggleMenu()"
+            >Testimonials</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" onclick="toggleMenu()">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- Banner Layout in HTML -->
+      <section class="banner" id="home">
+        <div class="textBx">
+          <h2>
+            <span>Hello, I'm Patrick Murimi.</span><br />
+            <i class="auto-input"></i>
+          </h2>
+          <a href="#about" class="abt btn">About Me</a>
+        </div>
+      </section>
+      <!-- Creating About Me Layout in HTML -->
+      <section class="about" id="about">
+        <div class="heading">
+          <p>Get to Know me</p>
+          <h2>About Me</h2>
+        </div>
+        <div class="content">
+          <div class="w50">
+            <img
+              src="https://res.cloudinary.com/votel/image/fetch/c_fill,g_auto,h_350,w_300/b_auto:border,c_pad,h_350,w_300/q_auto:best/https://res.cloudinary.com/dv765kdgq/image/upload/v1695998042/DSC07870_kqs85j.jpg"
+              alt=""
+              width="300px"
+              height="350px"
+              class="proPic"
+              data-aos="fade-up"
+              data-aos-offset="10"
+              data-aos-easing="ease-in-sine"
+            />
+          </div>
+          <div
+            class="contentBx w50"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h3>Who am i?</h3>
+            <h2>
+              <b id="myName"><b>I'm</b> Patrick Murimi,</b>
+              <span class="auto-text"></span>
+            </h2>
+            <p>
+              Passionate tech enthusiast and dedicated freelancer hailing from
+              Kenya. I find immense joy in crafting flawless code, witnessing it
+              seamlessly bring ideas to life. Music is my go-to for relaxation
+              and setting the right mood for productivity. Open-minded and
+              always eager to learn, I thrive on exploring diverse subjects and
+              connecting with people.
+
+              <br />
+              <br />
+              Specializing in UX/UI design and website development, I've been
+              shaping impressive digital experiences that align with the latest
+              design trends. Transforming visions into impactful products is my
+              forte. With a keen eye for product evolution, I excel in task
+              prioritization, rapid iteration, and speedy delivery. Let's
+              collaborate to turn your ideas into meaningful and user-friendly
+              solutions.
+            </p>
+            <h2 id="hdSkills"><b>Skills</b></h2>
+            <div id="skills">
+              <ul class="firstRow">
+                <li>HTML5 and CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstrap4</li>
+                <li>Git</li>
+                <li>C</li>
+                <li>Python</li>
+              </ul>
+              <ul class="secondRow">
+                <li>SQL</li>
+                <li>Flask</li>
+                <li>Angular</li>
+                <li>Typescript</li>
+                <li>PostgreSQL</li>
+                <li>React</li>
+              </ul>
+            </div>
+            <div class="heading bottom">
+              <div class="bt">
+                <b><i class="fa fa-book-reader"></i> Study:</b> University of
+                Eldoret.<br />
+                <b><i class="fa fa-calendar"></i> Major:</b> Computer Science<br />
+              </div>
+              <div class="bt">
+                <b><i class="fa fa-envelope"></i> Email:</b>
+                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5e353f3c2b393f2e6e6c1e39333f3732703d3133">[email&#160;protected]</a><br />
+                <b><i class="fa fa-map-marker"></i> Location:</b> KENYA
+              </div>
+              <a href="#messageMe"><span class="btn round">Get CV</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Creating Services Layout in HTML -->
+      <section class="services" id="services">
+        <div class="heading white">
+          <h2>My Services</h2>
+          <p>Services I offer to my clients</p>
+        </div>
+        <div class="content">
+          <div
+            class="servicesBx"
+            data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
+            <i class="fa fa-desktop fa-4x"></i>
+            <h3>Frontend Web Development</h3>
+            <p>
+              I can develop websites using HTML, CSS and JavaScript. I can also
+              use frameworks such as Bootstrap, Angular and React.
+            </p>
+          </div>
+          <div
+            class="servicesBx"
+            data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
+            <i class="fa fa-lightbulb-o fa-4x"></i>
+            <h3>Backend Web Development</h3>
+            <p>
+              I can work my way around the intensive backend logic and
+              functionality of a website.
+            </p>
+          </div>
+          <div
+            class="servicesBx"
+            data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
+            <i class="fa fa-css3 fa-4x"></i>
+            <h3>Responsive Web Design</h3>
+            <p>
+              I can develop websites to fit in all screen sizes, thus having a
+              fluid design across multiple devices.
+            </p>
+          </div>
+          <div
+            class="servicesBx"
+            data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
+            <i class="fa fa-picture-o fa-4x"></i>
+            <h3>Graphic Design</h3>
+            <p>
+              Manipulating the style and look of images is among my skill set.
+              It is quite useful especially in this field.
+            </p>
+          </div>
+          <div
+            class="servicesBx"
+            data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
+            <i class="fa fa-underline fa-4x"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              I create interesting and creative UI designs that have a modern
+              feel to it.
+            </p>
+          </div>
+          <div
+            class="servicesBx"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <i class="fa fa-gamepad fa-4x"></i>
+            <h3>App Development</h3>
+            <p>
+              I can develop mobile applications using Progressive Web Apps(PWA)
+              technology.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Creating Work Layout in HTML -->
+      <section class="work" id="work">
+        <div class="heading">
+          <h2>My Latest Work</h2>
+          <p>Showcasing some of my <b>Projects</b></p>
+        </div>
+        <div class="content">
+          <div class="workBx">
+            <a
+              href="https://my-store-final.vercel.app/"
+              target="_blank"
+              title="Ecommerce Site"
+            >
+              <img
+                src="images/e-commerce.jpg"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <p>Simple E-Commerce Site</p>
+            </a>
+          </div>
+          <div class="workBx">
+            <a
+              href="https://bootstrap4-neon.vercel.app/"
+              target="_blank"
+              title="Project Fashiongram"
+            >
+              <img
+                src="images/fashion.jfif"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <p>Project Fashiongram</p>
+            </a>
+          </div>
+          <div class="workBx">
+            <a
+              href="https://userio.vercel.app"
+              target="_blank"
+              title="Simple User Management Dashboard"
+            >
+              <img
+                src="images/survey.jfif"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <p>Simple User Management Dashboard</p>
+            </a>
+          </div>
+          <div class="workBx">
+            <a
+              href="https://quiz-app-roan-rho.vercel.app/"
+              target="_blank"
+              title="HTML, CSS and JavaScript Quiz App"
+            >
+              <img
+                src="images/quiz.jfif"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <p>Quiz App</p>
+            </a>
+          </div>
+
+          <div class="workBx">
+            <a
+              href="https://github.com/grand-rick001/Storefront-Backend-API"
+              target="_blank"
+              title="StoreFront Backend API"
+            >
+              <img
+                src="images/mother-board.jpg"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <p>Storefront Backend API</p>
+            </a>
+          </div>
+          <div class="workBx">
+            <a
+              href="https://my-booklist-app-mu.vercel.app/"
+              target="_blank"
+              title="Image Processing API"
+            >
+              <img
+                src="images/fiber.jpg"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <p>Image Processing API</p>
+            </a>
+          </div>
+          <div class="heading">
+            <a href="https://github.com/grand-rick001" class="btn"
+              >View All My Projects</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Creating Testimonial Layout in HTML -->
+      <section class="testimonial" id="testimonials">
+        <div class="heading white">
+          <h2>Testimonial</h2>
+          <p>What my clients think about me</p>
+        </div>
+        <div class="content">
+          <div
+            class="testimonialBx"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p>
+              I have had the pleasure of mentoring Patrick in their journey as a
+              Frontend developer specializing in Angular. Patrick has
+              consistently impressed me with their unwavering passion for
+              crafting exceptional user experiences. Their ability to swiftly
+              grasp intricate concepts and translate them into elegant solutions
+              is remarkable. Patrick's commitment to code quality, paired with
+              their collaborative nature and effective communication skills,
+              make them a standout developer. I wholeheartedly recommend Patrick
+              as a dedicated and adept Frontend developer who will undoubtedly
+              contribute positively to any project or team.
+            </p>
+            <h3>Anselemo Flavian<br />Software Engineer.</h3>
+          </div>
+          <div
+            class="testimonialBx"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p>
+              His expertise in Web Development is truly impressive, and it's
+              clear that he has a deep understanding of the field. What stood
+              out to me about Patrick is his ability to communicate complex
+              technical concepts in a way that is easy to understand for those
+              without a technical background. This is a rare skill that is
+              incredibly valuable in today's tech landscape, where effective
+              communication is essential for success. In addition to his
+              technical skills,Patrick also has strong leadership qualities. He
+              has a proven track record of leading successful projects and
+              teams, and his ability to motivate and inspire his colleagues is
+              second to none
+            </p>
+            <h3>Samuel Njau<br />Electronic and Computer Engineer</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Creating Contact Layout in HTML -->
+      <section class="contact" id="contact">
+        <div class="heading white">
+          <p>Feel free to contact me anytime</p>
+          <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+          <div class="contactInfo" data-aos="fade-up" data-aos-duration="1000">
+            <h3>Contact Info</h3>
+            <p>
+              Always available for freelance work if the right project<br />
+              comes along, Feel free to contact me!
+            </p>
+            <div class="contactInfoBx">
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>Eldoret, Uasin Gishu</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Schedule a call :</h3>
+                  <a
+                    href="https://calendly.com/gdsc-uoe-core-team-interview/coffee-chat"
+                    target="_blank"
+                  >
+                    Calendly Link
+                  </a>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-envelope-o"></i>
+                </div>
+                <div class="text">
+                  <h3>Email Address</h3>
+                  <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe97909891be8e9f8a8c979d95938b8c979397d08a9b9d96">[email&#160;protected]</a></p>
+                </div>
+              </div>
+              <br />
+              <h3>Social Connect</h3>
+              <div class="boxSocial">
+                <div class="icon">
+                  <a
+                    href="https://www.facebook.com/patrickkabuga097/"
+                    target="_blank"
+                  >
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="https://twitter.com/patrick_murimi_" target="_blank">
+                    <i class="fa fa-twitter-square"></i>
+                  </a>
+                </div>
+                <div class="icon">
+                  <a
+                    href="https://www.linkedin.com/in/patrick-murimi"
+                    target="_blank"
+                  >
+                    <i class="fa fa-linkedin-square"></i>
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="https://github.com/grand-rick001" target="_blank">
+                    <i class="fa fa-github-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="formBx"
+            id="messageMe"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <form action="https://formspree.io/f/xyyalqol" method="post">
+              <h3>Message Me</h3>
+              <input
+                type="text"
+                placeholder="Full Name"
+                name="fullName"
+                required
+              />
+              <input type="email" placeholder="Email" name="email" required />
+              <textarea
+                rows="6"
+                id="textarea"
+                placeholder="Your Message"
+                name="message"
+                required
+              ></textarea>
+              <input type="submit" value="Send Message" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <a href="#home" class="move-top">
+      <img src="images/arrow-up-icon.png" alt="move to top icon" />
+    </a>
+    <!-- Creating Footer Layout in HTML -->
+    <footer class="copyright">
+      <p>&copy;2023 | patrickmurimi.tech | All rights reserved.</p>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="ext.js" language="javascript"></script>
+    <!--//My Customized Script-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--//Auto-typing Script-->
+    <script src="typed.js"></script>
+    <!--//Auto-typing Customized Script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--//AOS Library Script-->
+    <script>
+      // Customizing the AOS Library Script
+      AOS.init({
+        offset: 150,
+        delay: 300,
+        duration: 500,
+        mirror: false,
+        once: true,
+      });
+    </script>
+  <script>(function(){var js = "window['__CF$cv$params']={r:'850d714358a9654b',t:'MTcwNzE2MDExMC44MjAwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

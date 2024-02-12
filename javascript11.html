@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Using JavaScript switch-case</h2>
+    <p id="demo"></p>
+    <script>
+        let day;
+        switch(new Date().getDay()){
+            case 0:day= "sunday";
+            case 1:day ="Monday";
+            case 2:day ="tuesday";
+            case 3:day ="wednesday";
+            case 4:day ="Thursday";
+            case 5:day="friday";
+            case 6:day ="saturday";
+            
+        }
+        document.getElementById('demo').innerHTML="Today is" +" " + day;
+    </script>
+</body>
+</html>

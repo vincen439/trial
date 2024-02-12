@@ -1,0 +1,45 @@
+h1{
+    text-transform: capitalize;
+    color: #f2f2f2;
+    text-shadow:red 2px 2px;
+  
+}
+form p input radio{
+    background-color: grey;
+    color: red;
+}
+form fieldset {
+    border-style: dotted;
+}
+input {
+    font-size: 120%;
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    background-color: #b8851f;
+    padding: 5px 5px 5px 30px;
+    background-position: 8px 9px;
+    
+    margin-bottom: 10px;}
+   section{
+        align-self: center;
+        color: chartreuse;
+        background-color: chocolate;
+        margin: 5px;
+        padding: 5px;
+    }
+ 
+   form fieldset input{
+        display: block;
+    }
+    form fieldset {
+        color: chartreuse;
+        background-color: chocolate;
+        padding: 5px;
+    }
+    body{
+        background-color: darkgoldenrod;
+    }
+    
+    

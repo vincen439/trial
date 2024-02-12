@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit=no>
+    <title>tulin supermarket</title>
+    <link rel="stylesheet" href="commerce.css">
+    <script type="javascript/text" src="commerce.js"></script>
+    <h1>tulin supermarket</h1>
+</head>
+<body>
+    <main>
+<h2 >products sold </h2>
+<div class="product" id="image">
+    <img src="bg.png" alt="phones">
+    <h3>Smart phones</h3>
+    <p>$27000.00</p>
+<button>Add to cart</button>
+</div>
+<div class="product" >
+    <img src="bg.png" alt="tv">
+    <h3>Vitron television</h3>
+    <p>$26000.00</p>
+    <button>Add to cart</button>
+< /div>
+<div class="product">
+    <img src="bg.png" alt="woofer">
+    <h3>Amtec woofers</h3>
+    <p>$6500.00</p>
+    <button>Add to cart</button>
+</div>
+    </main>
+
+
+    <section class="cart">
+        <h2>Cart</h2>
+        <ul id="cartIterms"></ul>
+        <p id="totalPrice">Total:Ksh0.00</p>
+        <button id="checkout">Check Out</button>
+       <button class="del" type="reset" onclick="totalPrice=0;
+       totalPriceElement.textContent =cartItermElement.innerHTML=''; `Total: Ksh${totalPrice.toFixed(2)}`;">Reset</button>
+       <button><a href="#">Top</a></button>
+        </section>
+    <script>
+const cartItermElement=document.getElementById('cartIterms');
+const totalPriceElement=document.getElementById('totalPrice');
+let totalPrice=0;
+
+
+
+function addToCart(productName, price) {
+   // Create a new li element
+   const newItem = document.createElement('li');
+   newItem.textContent = `${productName} - ksh${price.toFixed(2)}`;
+
+
+   // Append the new item to the cart
+   cartItermElement.appendChild(newItem);
+
+   // Update the total price
+   totalPrice += price;
+   totalPriceElement.textContent = `Total:ksh ${totalPrice.toFixed(2)}`;
+}
+
+// Add event listeners to all "Add to Cart" buttons
+const addToCartButtons = document.querySelectorAll('.product button');
+addToCartButtons.forEach((button) => {
+   button.addEventListener('click', () => {
+      const productElement = button.parentNode;
+      const productName = productElement.querySelector('h3').textContent;
+      const price = parseFloat(productElement.querySelector('p').textContent.slice(1));
+
+      addToCart(productName, price);
+   });
+});
+const checkout=document.getElementById('checkout');
+checkout.addEventListener('click',()=>{
+    alert("Thank you for your purchase!");
+    cartItermElement.innerHTML='';
+totalPrice=0;
+totalPriceElement.textContent = `Total: Ksh${totalPrice.toFixed(2)}`;
+});
+
+    </script>
+</body>
+</html>

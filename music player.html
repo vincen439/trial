@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #player-container {
+            width: 300px;
+            margin: 50px auto;
+            background-color: #911818;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 8px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="player-container">
+        <h2>Music Player</h2>
+        <select id="songSelect">
+            <option value="c:\Users\Obare\Desktop\portfolia\anth_if_this_is_goodbye_ft._corey_nyell_lyrics_h264_1084.mp3">Song 1</option>
+            <option value="">Song 2</option>
+            <option value="">Song 3</option>
+        </select>
+        <br>
+        <audio id="audioPlayer" controls></audio>
+        <br>
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="stop()">Stop</button>
+    </div>
+
+    <script>
+        var audioPlayer = document.getElementById("audioPlayer");
+        var songSelect = document.getElementById("songSelect");
+
+        function playPause() {
+            if (audioPlayer.paused) {
+                var selectedSong = songSelect.value;
+                if (selectedSong) {
+                    audioPlayer.src = selectedSong;
+                    audioPlayer.play();
+                } else {
+                    alert("Please select a song.");
+                }
+            } else {
+
+                audioPlayer.pause();
+            }
+        }
+
+        function stop() {
+            audioPlayer.pause();
+            audioPlayer.currentTime = 0;
+        }
+    </script>
+
+</body>
+</html>

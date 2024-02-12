@@ -1,0 +1,44 @@
+
+form{
+    
+   
+    transform: translate(-50 -50);
+    border:solid;
+    width: auto;
+    margin: 0%;
+    height: auto;
+    text-align: left;
+    
+    font-size: 20px;
+    color: aqua;
+    font-family: sans-serif;
+    display: block;
+    position: absolute;
+    left:35%;
+    flex-grow: inherit;
+    background-color: blueviolet;
+    padding:  45px ;
+    
+    box-shadow: brown;
+    text-shadow: brown;
+}
+input[type="text"],input[type="email"],input[type="tel"]{
+    border-radius: 10px;
+    box-sizing: border-box;
+  margin: 0%;
+}
+
+h1{
+    text-shadow: red 3px 2px;
+}
+.button {
+    text-align: center;
+    padding-top: 15px;
+   
+}
+.video{
+    display: block;
+    position: fixed;
+    background-size: cover;
+
+}

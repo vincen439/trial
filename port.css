@@ -1,0 +1,45 @@
+h1{
+ text-transform: capitalize;   
+
+}
+
+
+ ul li a{
+  text-decoration: none;  
+  
+lighting-color: blue;
+}
+ul li a{
+    list-style: none;
+    padding-left: 20px;
+}
+ul{
+    background-color: aquamarine;
+    list-style: none;
+    display: inline-flex;
+    text-transform: capitalize; 
+    
+padding: 25px;
+
+
+}
+ ul li a:hover{
+    background-color: blueviolet;
+    color: red;
+    
+}
+ form ul{
+    background-color: aquamarine;
+    list-style: none;
+    display: block;
+    padding: 45px;
+padding-bottom: 45px;
+
+
+}
+form{
+    width: 50%;
+}
+form ul li{
+    padding: 45px;
+    padding-bottom: 45px;}

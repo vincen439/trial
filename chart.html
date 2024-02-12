@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chart Messaging App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .messages {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+    </style>
+    <script>
+        document.getElementById('sendButton').addEventListener('click', function() {
+  var inputMessage = document.getElementById('inputMessage');
+  
+  if (inputMessage.value !== '') {
+    addMessage(inputMessage.value);
+    inputMessage.value = '';
+  }
+});
+
+function addMessage(message) {
+  var messagesElement = document.getElementById('messages');
+  var newMessageElement = document.createElement('div');
+  newMessageElement.innerText = message;
+  messagesElement.appendChild(newMessageElement);
+  messagesElement.scrollTop = messagesElement.scrollHeight;
+}
+    </script>
+  <div class="container">
+    <div class="messages" id="messages"></div>
+    <input type="text" id="inputMessage" placeholder="Type your message">
+    <button id="sendButton">Send</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
